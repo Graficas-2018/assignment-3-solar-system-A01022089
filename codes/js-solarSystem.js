@@ -283,9 +283,10 @@ function createPlanets()
       asteroidsRing.position.set(0,-4,0);
       celestialGroup.add(asteroidsRing);
 
-      for(var i = 0; i < 700; i++)
+      geometry = new THREE.SphereGeometry(0.3, 4, 4);
+      for(var i = 0; i < 10; i++)
       {
-        geometry = new THREE.SphereGeometry(0.3, 4, 4);
+        // geometry = new THREE.SphereGeometry(0.3, 4, 4);
         asteroid = createBump("../images/moon_1024.jpg", "../images/moon_bump.jpg");
         var positionX = Math.cos(i* Math.PI / 180) * (Math.random() * 20 + 85);
         var positionY = Math.random() * 10 - 5;
